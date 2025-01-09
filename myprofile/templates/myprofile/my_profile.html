@@ -1,0 +1,28 @@
+{% extends 'myprofile/base.html' %}
+
+{% block content %}
+    <h1>プロフィール</h1>
+    <main class="content">
+        <div class="simple">
+        <h2>名前: 打田圭志 (うちだけいじ)</h2>
+        <h2>大学: 長崎県立大学</h2>
+        <h2>学部: 経営学部経営学科</h2>
+        </div>
+
+        <div class="study">
+            <h2>何を勉強しているか</h2>
+            <ul>
+                <li>投資 (長期的運用、ファンド、ファンダメンタル分析、CAPM)</li>
+                <li>プログラミング (Python、データベース、Web系)</li>
+            </ul>
+        </div>
+
+        <div class="business">
+            <h2>やろうとしている事業</h2>
+            <ul>
+                <li>投資意思決定をサポートするWebアプリケーションの運営</li>
+            </ul>
+            <h3 class="about"><i>Auto Portfolio with U.S Individual stocks</i><a href="{% url 'my_business' %}">about</a></h3>
+        </div>
+    </main>
+{% endblock %}

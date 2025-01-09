@@ -1,9 +1,11 @@
 {% extends 'myprofile/base.html' %}
 
 {% block content %}
-    <div class="title">
+    <div class="title" style="font-family: Arial, Helvetica, sans-serif;
+                              text-align: center;
+                              padding-bottom: 25px;">
         <h1>Auto Portfolio with U.S Individual stocks</h1>
-        <h2><i>Making investing easy</i></h2>
+        <h2 style=" text-decoration: underline;"><i>Making investing easy</i></h2>
     </div>
     
     <div class="about_business">
@@ -12,7 +14,7 @@
         </ul>
 
         <ol>
-            <li>米国株のデータ(時価総額やセクター、ROEなどの経営指標)を集める</li>
+            <li>米国株のデータ(時価総額やセクター、ROEなどの経営指標)を集める API</li>
             <li>投資先を選ぶ<br>ex) PERが1以下、ROEが0.1以上など</li>
             <li>リスク許容度(Beta)、予算を決める</li>
             <li>自動でポートフォリオ作成</li>
